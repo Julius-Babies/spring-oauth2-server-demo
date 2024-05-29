@@ -1,0 +1,19 @@
+server:
+    port: 5050
+    error:
+        include-message: always
+        include-exception: true
+        include-stacktrace: always
+
+logging:
+    level:
+        org.springframework.security: TRACE
+
+rsa:
+    private-key: classpath:certs/private.pem
+    public-key: classpath:certs/public.pem
+
+spring:
+    application:
+        name: spring-oauth2-server-demo
+
